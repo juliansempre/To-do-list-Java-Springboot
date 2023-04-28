@@ -93,6 +93,9 @@ public class TaskController {
         log.info("Excluindo tarefas com o id [{}]", id);
         return taskService.deleteById(id);
     }
-
+    @RequestMapping("/")
+    public String index(){
+        return "index";
+    }
 
 }
